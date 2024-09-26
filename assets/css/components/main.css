@@ -1,3 +1,10 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
 .container{
     max-width: 70%;
     background: #2c2c2c;
@@ -5,12 +12,10 @@
 
     margin-top: 20px;
     margin-left: 20px;
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px 40px 10px;
 
-    max-width: 70%;
+    max-width: 100%;
     border-radius: 10px;
-
-    display: flex;
 }
 
 .about-container{
@@ -33,7 +38,7 @@
     left: -1px; /* Alinha o traço à direita das letras */
     top: 150px;
     width: 2px; /* Largura do traço */
-    height: 30%; /* Altura do traço igual à altura do conteúdo */
+    height: 50%; /* Altura do traço igual à altura do conteúdo */
     background: #4d4d4d; /* Cor do traço */
     margin-left: 10px; /* Espaçamento entre a coluna e o traço */
 }
@@ -68,4 +73,51 @@
     text-align: start;
     color: #535353;
     letter-spacing: 0.8px;
+}
+
+
+/*SKILLS*/
+.skills-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Permite que os cards ocupem o mesmo espaço */
+    max-width: 220px;
+}
+
+.card i {
+    font-size: 3rem;
+    color: #e44d26; /* Cor específica para o ícone HTML */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.card p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+.card:nth-child(2) i {
+    color: #2965f1; /* Cor para o ícone CSS */
+}
+
+.card:nth-child(3) i {
+    color: #f0db4f; /* Cor para o ícone JavaScript */
+}
+
+.card:nth-child(4) i {
+    color: #563d7c; /* Cor para o ícone Bootstrap */
 }
