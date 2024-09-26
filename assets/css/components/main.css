@@ -80,8 +80,11 @@
 .skills-content {
     display: flex;
     gap: 20px;
+
     justify-content: space-between;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -92,6 +95,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     flex: 1; /* Permite que os cards ocupem o mesmo espaço */
     max-width: 220px;
+    
 }
 
 .card i {
