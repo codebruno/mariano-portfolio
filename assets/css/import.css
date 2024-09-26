@@ -1,0 +1,6 @@
+@import url('./components/reset.css');      /* Reset CSS - para normalizar estilos */
+@import url('./components/variables.css');  /* Variáveis CSS - define cores e outros estilos */
+@import url('./components/global.css');      /* Estilos globais - estilos gerais do site */
+@import url('./components/aside.css');       /* Estilos específicos para o menu lateral */
+@import url('./components/responsive.css');   /* Estilos responsivos - para dispositivos diferentes */
+@import url('./components/main.css'); 

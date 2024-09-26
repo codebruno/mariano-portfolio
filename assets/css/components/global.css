@@ -1,0 +1,17 @@
+body {
+    line-height: 1.5; /* Aumenta a legibilidade */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
+}
+
+img {
+    max-width: 100%; /* Garante que as imagens não excedam seus contêineres */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+ul {
+    list-style: none; /* Remove marcadores de lista */
+}
+
+.container{
+    max-width: 1024px;
+}

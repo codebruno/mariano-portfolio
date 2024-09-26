@@ -1,0 +1,71 @@
+.container{
+    max-width: 70%;
+    background: #2c2c2c;
+    box-shadow: 5px 1px 1px 2px #4e4e4e;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px 10px 20px 10px;
+
+    max-width: 70%;
+    border-radius: 10px;
+
+    display: flex;
+}
+
+.about-container{
+    display: flex;
+    gap: 20px;
+}
+
+.about-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding-left: 3px; /* Espaço para o traço */
+}
+
+.about-column::after {
+    content: '';
+    position: absolute;
+    left: -1px; /* Alinha o traço à direita das letras */
+    top: 150px;
+    width: 2px; /* Largura do traço */
+    height: 30%; /* Altura do traço igual à altura do conteúdo */
+    background: #4d4d4d; /* Cor do traço */
+    margin-left: 10px; /* Espaçamento entre a coluna e o traço */
+}
+
+.about-column .a{
+    color: #B9B4C7;
+    font-size: 1rem;
+}
+
+.about-column .b{
+    color: #4d4d4d;
+    font-size: 1rem;
+}
+
+.about-column .o{
+    color: #B9B4C7;
+    font-size: 1rem;
+}
+
+.about-column .u{
+    color: #B9B4C7;
+    font-size: 1rem;
+}
+
+.about-column .t{
+    color: #B9B4C7;
+    font-size: 1rem;
+}
+
+.about-content{
+    font-size: 0.9rem;
+    text-align: start;
+    color: #535353;
+    letter-spacing: 0.8px;
+}
