@@ -1,127 +1,65 @@
-.main-content{
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: -20px;
+    color: #2c3e50;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para as Abas */
+.tab-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.container{
-    max-width: 70%;
-    background: #2c2c2c;
-    box-shadow: 5px 1px 1px 2px #4e4e4e;
-
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 40px 10px 40px 10px;
-
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.about-container{
-    display: flex;
-    gap: 20px;
-}
-
-.about-column {
+.tab-nav ul li span {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    position: relative;
-    padding-left: 3px; /* Espaço para o traço */
+    justify-content: center;
+    font-size: 0.7rem;
 }
 
-.about-column::after {
-    content: '';
-    position: absolute;
-    left: -1px; /* Alinha o traço à direita das letras */
-    top: 150px;
-    width: 2px; /* Largura do traço */
-    height: 50%; /* Altura do traço igual à altura do conteúdo */
-    background: #4d4d4d; /* Cor do traço */
-    margin-left: 10px; /* Espaçamento entre a coluna e o traço */
-}
-
-.about-column .a{
-    color: #B9B4C7;
-    font-size: 1rem;
-}
-
-.about-column .b{
-    color: #4d4d4d;
-    font-size: 1rem;
-}
-
-.about-column .o{
-    color: #B9B4C7;
-    font-size: 1rem;
-}
-
-.about-column .u{
-    color: #B9B4C7;
-    font-size: 1rem;
-}
-
-.about-column .t{
-    color: #B9B4C7;
-    font-size: 1rem;
-}
-
-.about-content{
-    font-size: 0.9rem;
-    text-align: start;
-    color: #535353;
-    letter-spacing: 0.8px;
-}
-
-
-/*SKILLS*/
-.skills-content {
+.tab-nav ul li {
     display: flex;
-    gap: 20px;
-
-    justify-content: space-between;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.card {
-    background-color: #2c2c2c;
+.tab-nav ul li a {
+    color: #979797;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tab-nav ul li a.active, .tab-nav ul li a:hover {
+    background: #979797;
+    color: #f8f8ff;
+}
+
+/* Estilo para o Conteúdo das Abas */
+.tab-content {
+    display: none;
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex: 1; /* Permite que os cards ocupem o mesmo espaço */
-    max-width: 220px;
-    
+    background: #333333;
+    border-radius: 8px;
 }
 
-.card i {
-    font-size: 3rem;
-    color: #e44d26; /* Cor específica para o ícone HTML */
+.tab-content.active {
+    display: block;
 }
 
-.card h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #ffffff;
+.banner-content h1, h2{
+    color: #f8f8ff;
 }
 
-.card p {
-    color: #a0a0a0;
-    font-size: 0.9rem;
-}
-
-.card:nth-child(2) i {
-    color: #2965f1; /* Cor para o ícone CSS */
-}
-
-.card:nth-child(3) i {
-    color: #f0db4f; /* Cor para o ícone JavaScript */
-}
-
-.card:nth-child(4) i {
-    color: #563d7c; /* Cor para o ícone Bootstrap */
+.banner-content, p{
+    color: #979797;
 }
