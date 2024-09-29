@@ -5,6 +5,8 @@
 
     flex: 1;
     overflow-y: hidden;
+
+    min-width: 100%;
 }
 
 .tab-nav ul{
