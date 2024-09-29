@@ -1,22 +1,28 @@
-body {
-    line-height: 1.5; /* Aumenta a legibilidade */
+body{
+    background: var(--color-bg);
     width: 100%;
     height: 100vh;
     max-width: 1024px;
-    background: var(--color-bg);
-    font-family: var(--font-family);
+
+    font-family: var(--font-family-poppins);
     display: flex;
 }
 
-img {
-    max-width: 100%; /* Garante que as imagens não excedam seus contêineres */
-    height: auto; /* Mantém a proporção das imagens */
+img{
+    width: 100%;
+    height: auto;
 }
 
-ul {
-    list-style: none; /* Remove marcadores de lista */
+h1, h2, h3, a, p{
+    color: var(--color-text);
+    letter-spacing: 0.8px;
 }
 
-.container{
-    max-width: 1024px;
+h1, h2, h3{
+    font-weight: bold;
+    font-size: var(--font-size-title);
+}
+
+p{
+    font-size: var(--font-size-subtitle);
 }

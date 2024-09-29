@@ -15,61 +15,48 @@
     <link rel="stylesheet" href="assets/css/import.css"> 
 </head>
 <body>
-   <!-- Menu Lateral -->
-    <aside class="sidebar">
-        <div class="profile">
-            <figure>
-                <img src="assets/images/logo/logo.svg" alt="Foto fictícia de Bruno Mariano" class="profile-pic">
-                <figcaption>
-                    <h1 class="profile-name">Bruno Mariano</h1>
-                    <p class="profile-role">Front-End Developer</p>
-                </figcaption>
-            </figure>
-        </div>
+   
+    <!-- Menu Lateral -->
+    <aside class="sidebar" aria-label="Menu lateral com perfil e redes sociais">
+        <div class="sidebar-profile">
+            <img src="assets/images/logo/logo.svg" alt="Logo de Bruno Mariano - Front-End Developer" class="sidebar-profile-logo">
+            <h1 class="sidebar-profile-name">Bruno Mariano</h1>
+            <p class="sidebar-profile-text">Front-End Developer</p>
+        </div> <!--end of profile -->  
 
-        <!-- Navegação Social -->
-        <nav class="social-nav">
+         <!-- Side Navigation para redes sociais -->
+        <nav aria-label="Redes sociais" class="social-nav">
             <ul class="social-list">
                 <li class="social-item">
-                    <a href="https://github.com/seu-github" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i> 
-                    </a>
-                </li>
+                    <a href="#" target="_blank" title="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+                </li> <!--end of social-item --> 
                 <li class="social-item">
-                    <a href="https://linkedin.com/in/seu-linkedin" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
+                    <a href="#" target="_blank" title="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </li> <!--end of social-item --> 
                 <li class="social-item">
-                    <a href="https://instagram.com/seu-instagram" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
+                    <a href="#" target="_blank" title="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+                </li> <!--end of social-item --> 
                 <li class="social-item">
-                    <a href="https://api.whatsapp.com/send?phone=5547991597258&text=Olá,%20em%20breve%20entrarei%20em%20contato!" target="_blank" class="social-link">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
+                    <a href="https://api.whatsapp.com/send?phone=5547991597258&text=Olá,%20em%20breve%20entrarei%20em%20contato!" target="_blank" title="WhatsApp" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </li> <!--end of social-item --> 
+            </ul> <!--end of social-list -->  
         </nav>
 
-        <!-- Botão de Download -->
-        <div class="download-section">
-            <a href="curriculo-bruno-mariano.pdf" class="btn-download" download>
-                <i class="fas fa-download"></i> Download CV
-            </a>
-        </div>
+         <!-- Botão de Download -->
+        <div class="download-cv">
+            <a href="curriculo-bruno-mariano.pdf" title="Download do Currículo" class="download-btn"><i class="fas fa-download"></i>Download CV</a>
+        </div> <!--end of download-cv" -->  
 
-        <!-- Rodapé -->
-        <footer class="sidebar-footer">
+         <!-- Rodapé -->
+         <footer class="sidebar-footer">
             <p>&copy; 2024 Bruno Mariano. Todos os direitos reservados.</p>
         </footer>
-    </aside>
+    </aside> <!--end of sidebar -->
 
-    <!-- Conteúdo Principal -->
-    <main class="main-content">
-        <!-- Navegação das Abas -->
-        <nav class="tab-nav">
+     <!-- Main Content -->
+    <main class="main-content" aria-label="Navegação de abas principais">
+        <!-- Tab Navigation -->
+         <nav class="tab-nav">
             <ul>
                 <li><a href="#" class="tab-link active" data-tab="home">
                     <span>H</span>
@@ -88,10 +75,11 @@
                     <span>S</span>
                     <span>k</span>
                     <span>i</span>
-                    <span>i</span>
+                    <span>l</span>
+                    <span>l</span>
                     <span>s</span>
                 </a></li>
-                <li><a href="#" class="tab-link" data-tab="portfolio">
+                <li><a href="#" class="tab-link" data-tab="prtfolio">
                     <span>P</span>
                     <span>r</span>
                     <span>o</span>
@@ -102,57 +90,91 @@
                     <span>s</span>
                 </a></li>
             </ul>
-        </nav>
+         </nav> <!--end of tab-nav -->
 
-        <!-- Conteúdo das Abas -->
+         <!-- Tab Content -->
         <div class="tab-content active" id="home">
-            <!-- Banner de Crescimento -->
-            <section class="banner">
-                <img src="https://via.placeholder.com/1200x400" alt="Banner de Crescimento - Exemplo">
-                <div class="banner-content">
-                    <h1>Seu Crescimento com a Nossa Solução</h1>
-                    <p>Através de nossa experiência e estratégias personalizadas, impulsionamos o crescimento do seu negócio de forma constante e sustentável. Nossa equipe trabalha com dedicação para garantir resultados visíveis e um impacto positivo em suas metas.</p>
-                </div>
-            </section>
-            
-            <!-- Texto de Introdução -->
-            <h2>Bem-vindo!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam quibusdam dolore cum.</p>
-        </div>
+
+            <div class="tab-content-home">
+                <!-- Tab Content Banner -->
+                <figure>
+                    <img src="assets/images/banners/banner.svg" alt="Banner ilustrativo de desenvolvimento front-end">
+                    <figcaption>Desenvolvimento front-end com foco no crescimento de negócios</figcaption>
+                </figure>
+
+                <!-- Main Content -->
+                <article class="tab-content-banner">
+                    <p>Com expertise em tecnologias modernas como HTML5, CSS3, JavaScript e Bootstrap, ofereço soluções personalizadas para criar interfaces web rápidas e responsivas. A minha abordagem é focada em performance, design intuitivo e resultados visíveis que impulsionam o crescimento sustentável do seu negócio.</p>
+                </article> <!-- end of tab-content-text -->
+
+                <!-- Introductory Text -->
+                <section class="tab-content-banner">
+                    <h2>Bem-vindo!</h2>
+                    <p>Ofereço soluções de desenvolvimento front-end para criar Lading Pages modernas e responsivas. Utilizando HTML5, CSS3, JavaScript e Bootstrap, desenvolvo interfaces rápidas, intuitivas e otimizadas, sempre focadas em performance e design centrado no usuário.</p>
+                </section> <!-- end of tab-content-text -->
+            </div> <!-- end of tab-content-home -->
+        </div> <!-- end of tab-content active -->
         
-        <div class="tab-content" id="about">
-            <h2>Sobre Mim</h2>
-            <p>Informações sobre Bruno Mariano.</p>
-        </div>
-        <div class="tab-content" id="skills">
-            <h2>Minhas Habilidades</h2>
-            <p>Lista de habilidades de desenvolvimento front-end.</p>
-        </div>
-        <div class="tab-content" id="portfolio">
-            <h2>Meu Portfólio</h2>
-            <p>Projetos anteriores e trabalhos de Bruno Mariano.</p>
-        </div>
-    </main>
+        <section class="tab-content" id="about">
 
+            <article class="about-content">
 
-    <!-- JavaScript para alternar abas -->
-    <script>
-        const tabs = document.querySelectorAll('.tab-link');
-        const contents = document.querySelectorAll('.tab-content');
+                <div class="about-content-text">
+                    <h2>Sobre Mim</h2>
+                    
+                    <!-- Primeiro parágrafo com um estilo mais destacado -->
+                    <p class="intro-text">Estou constantemente aprimorando minhas habilidades e me dedicando ao estudo de desenvolvimento web. Com conhecimento em HTML, CSS, JavaScript e Bootstrap, estou focado em construir interfaces responsivas e modernas. Motivado a aprender e me aprofundar em novas tecnologias.</p>
+                
+                    <!-- Figura centralizada com espaçamento -->
+                    <figure class="about-image">
+                        <img src="assets/images/banners/bannerS.svg" alt="Banner de Crescimento - Exemplo">
+                    </figure>
+                
+                    <!-- Segundo bloco de texto com estilo diferenciado -->
+                    <p class="intro-text">Sou um profissional dedicado ao desenvolvimento web, sempre buscando expandir meu conhecimento e habilidades técnicas. Ao longo do tempo, adquiri uma sólida base em HTML, CSS, JavaScript e Bootstrap, o que me permite criar interfaces modernas e altamente responsivas. Estou constantemente explorando novas tecnologias, com um forte foco em aprimorar a experiência do usuário e oferecer soluções de design intuitivo e eficaz.</p>
+                </div>
+                
+            </article>  <!-- end of about-content -->
+        </section> <!-- end of tab-content -->
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(event) {
-                event.preventDefault();
+        <section class="tab-content" id="skills">
+            <article class="tab-content-skills">
+                <h2>Minhas Habilidades</h2>
+                <p>Como desenvolvedor, estou me dedicando a aprender e dominar as principais tecnologias de desenvolvimento web. Abaixo estão as habilidades que já adquiri e continuo aprimorando:</p>
+            
+                <!-- Container de Cards -->
+                <ul class="skills-cards">
+                    <li class="card">
+                        <i class="fab fa-html5" style="color: #E44D26;"></i>
+                    </li>
+                    <li class="card">
+                        <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                    </li>
+                    <li class="card">
+                        <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                    </li>
+                    <li class="card">
+                        <i class="fab fa-bootstrap" style="color: #7952B3;"></i>
+                    </l>
+                    <li class="card">
+                        <i class="fab fa-react" style="color: #2b9ae9;"></i>
+                    </li>
+                    <li class="card">
+                        <i class="fab fa-php" style="color: #7952B3;"></i>
+                    </l>
+                    <li class="card">
+                        <i class="fab fab fa-python" style="color: #1646e0;"></i>
+                    </li>
+                    <li class="card">
+                        <i class="fab fab fa-wordpress" style="color: #5ab3fc;"></i>
+                    </l>
+                </ul>  <!-- end of skills-cards -->
+            </article>
+        </section> <!-- end of tab-content -->
+           
+    </main> <!--end of tab-content -->
 
-                // Remove a classe 'active' de todas as abas e conteúdos
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(content => content.classList.remove('active'));
-
-                // Adiciona a classe 'active' na aba e conteúdo clicados
-                this.classList.add('active');
-                document.getElementById(this.dataset.tab).classList.add('active');
-            });
-        });
-    </script>
+     <!-- JavaScript para alternar abas -->
+     <script src="assets/js/script.js"></script>
 </body>
 </html>

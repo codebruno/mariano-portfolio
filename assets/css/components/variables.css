@@ -1,12 +1,34 @@
-/* Variáveis de Cores */
+/* Variáveis CSS */
 :root {
-    --cor-primaria: #007bff;
-    --cor-secundaria: #6c757d;
-    --cor-fundo: #f5f5f5;
-    --cor-texto: #333;
-    --cor-texto-secundario: #666;
-    --cor-botao-hover: #0056b3;
-    --cor-social: #0056b3;
-    --cor-social-hover: #333;
-    --cor-social-texto: #f5f5f5
+    --color-bg: #2e2e2e;
+    --color-sidebar-bg: #393E46;
+
+    --color-text: #f8f8ff;
+    --color-text-social: #979797;
+    --color-text-cv: #979797;
+
+    --color-hover: #2e2e2e;
+    --color-hover-text: #f8f8ff;
+
+    --color-border: #979797;
+    --color-border-hover: #2e2e2e;
+
+    --color-btn: #979797;
+
+    --color-github: #000;
+    --color-linkedin: #007bb5;
+    --color-instagram: #125688;
+    --color-whatsapp: #4dc247;
+
+    --font-family-poppins: 'Poppins', sans-serif;
+
+    --font-size-title: 1.3rem; /* 20.8 px */
+    --font-size-subtitle: 0.8rem; /* 12.8 px */
+    --font-size-paragraph: 0.8rem; /* 12.8 px */
+
+
+    --btn-padding: 10px 20px;
+    --btn-border-radius: 4px;
+
+    --transition-speed: 0.3s;
 }

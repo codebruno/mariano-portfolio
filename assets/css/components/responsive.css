@@ -1,76 +1,32 @@
-/* Para tablets e dispositivos pequenos */
-@media (max-width: 768px) {
-    body {
+@media screen and (max-width: 768px){
+    body{
         flex-direction: column;
         height: auto;
         max-width: 100%;
+        min-width: 100%;
     }
 
-    .sidebar {
-        width: 100%;
+    .sidebar{
+        padding: 50px;
+        border-radius: 0;
+    }
+
+    .download-cv .download-btn{
+        padding: 8px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        flex-direction: column;
         height: auto;
         max-width: 100%;
+        min-width: 100%;
+    }
+
+    .sidebar{
+        padding: 50px;
         border-radius: 0;
-        
-    }
-
-    .profile-pic {
-        width: 100px;
-    }
-
-    .profile h1 {
-        font-size: 1.1rem;
-    }
-
-    .profile p {
-        font-size: 0.7rem;
-    }
-
-    .social-nav ul {
-        justify-content: center;
-    }
-
-    .btn-download {
-        max-width: 200px;
-        margin: 18px auto;
-        
     }
 }
-
-/* Para smartphones e telas muito pequenas */
-@media (max-width: 480px) {
-    .sidebar {
-        padding: 20px;
-    }
-
-    .profile-pic {
-        width: 80px;
-    }
-
-    .profile h1 {
-        font-size: 1rem;
-    }
-
-    .profile p {
-        font-size: 0.6rem;
-    }
-
-    .social-nav ul {
-        font-size: 1rem;
-        gap: 5px;
-    }
-
-    .social-nav ul li a {
-        padding: 5px;
-    }
-
-    .btn-download {
-        padding: 8px;
-        font-size: 0.8rem;
-    }
-
-    .sidebar-footer p {
-        font-size: 0.8rem;
-    }
-}
-
