@@ -18,6 +18,7 @@
 
 .sidebar-profile-name{
     margin-top: 5px;
+    font-size: var(--font-size-aside-title);
 }
 
 .sidebar-profile-text{
@@ -73,6 +74,9 @@
     border: 1px solid var(--color-whatsapp);
 }
 
+.sidebar-footer p{
+    font-size: 0.9rem;
+}
 /********** Download CV **********/
 .download-cv .download-btn{
     display: flex;
