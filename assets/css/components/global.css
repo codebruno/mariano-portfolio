@@ -1,7 +1,7 @@
 body{
     background: var(--color-bg);
     height: 100vh;
-    max-width: 1580px;
+    max-width: 1900px;
 
     font-family: var(--font-family-poppins);
     display: flex;
