@@ -1,27 +1,21 @@
-.main-content{
+.main-content {
     display: flex;
-    align-items: center; 
-    justify-content: center;   
-
-    flex: 1;
-    overflow-y: hidden;
-
+    align-items: center;
    
-    max-width: 100%;
 }
 
-.tab-nav ul{
+.tab-nav ul {
     text-transform: uppercase;
-    
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     padding-left: 20px;
     height: 100vh;
+    justify-content: space-evenly; /* Isso centraliza os itens verticalmente */
 }
 
-.tab-nav ul li{
+.tab-nav ul li {
     display: flex;
+    flex-direction: column; /* Adicione isso para garantir que cada li seja uma coluna */
 }
 
 .tab-nav ul li a {
@@ -38,7 +32,7 @@
     color: var(--color-text);
 }
 
-.tab-nav span{
+.tab-nav span {
     font-size: 0.7rem;
     font-weight: bold;
     display: block;
@@ -46,10 +40,151 @@
     text-align: center;
 }
 
-/* Estilo para o Conteúdo das Abas */
-.tab-content {
+/* Estilos para o menu hambúrguer */
+.hamburger {
     display: none;
-    padding: 20px;
+    background: none;
+    border: none;
+    color: var(--color-text-social);
+    font-size: 24px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* Responsividade para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .tab-nav ul {
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    
+    /* Oculta o menu lateral por padrão */
+    .tab-menu {
+        display: none;
+    }
+
+    .tab-link {
+        display: flex;
+    }
+
+    /* Exibe o botão de menu hambúrguer */
+    .hamburger {
+        display: block;
+    }
+
+    /* Quando o menu é aberto */
+    .tab-menu.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #5a5a5abb;
+        width: 30%; /* Aumentado para melhorar o uso em telas menores */
+        height: 57vh; /* Altura ajustada para cobrir mais da tela */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Para telas menores que 425px */
+@media (max-width: 425px) {
+    /* Ajustes no menu */
+    .tab-menu.active {
+        padding-top: 40px;
+        width: 100%; /* Aumentar a largura do menu em telas menores */
+        height: 57vh; /* Cobrir mais da altura da tela */
+        align-items: flex-start;
+    }
+    /* Quando o menu é aberto */
+    .tab-menu.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #5a5a5a;
+        width: 100%; /* Aumentado para melhorar o uso em telas menores */
+        height: 57vh; /* Altura ajustada para cobrir mais da tela */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Para telas menores que 375px */
+@media (max-width: 375px) {
+    .tab-menu.active {
+        padding-top: 40px;
+        width: 100%; /* Aumentar a largura do menu em telas menores */
+        height: 57vh; /* Cobrir mais da altura da tela */
+        align-items: flex-start;
+    }
+    /* Quando o menu é aberto */
+    .tab-menu.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #5a5a5a;
+        width: 100%; /* Aumentado para melhorar o uso em telas menores */
+        height: 57vh; /* Altura ajustada para cobrir mais da tela */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Para telas menores que 320px */
+@media (max-width: 320px) {
+    /* Ajustes no menu */
+    .tab-menu.active {
+        padding-top: 10px;
+        width: 95%; /* Cobrir praticamente toda a tela */
+        height: 85vh; /* Cobrir quase toda a altura da tela */
+        align-items: flex-start;
+    }
+
+    .tab-nav ul li {
+        margin: 4px 0;
+    }
+
+    .tab-nav ul li a {
+        font-size: 12px; /* Reduzir a fonte para telas bem pequenas */
+        padding: 2px 6px;
+    }
+
+    /* Ajuste no botão do menu hambúrguer */
+    .hamburger {
+        font-size: 14px;
+    }
+
+    /* Ajuste no conteúdo das abas */
+    section[data-tab-content] {
+        padding: 5px;
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
+
+    section p {
+        font-size: 10px;
+        line-height: 1.1;
+    }
+}
+
+
+/* Estilo para o Conteúdo das Abas */
+.tab-content{
+    padding-left: 20px;
+    max-width: 1540px;
+    display: none;
 }
 
 .tab-content.active {
@@ -64,13 +199,14 @@
 }
 
 .tab-content-home{
-    color: var(--color-text);
+    color: #ffffffb6;
     letter-spacing: 0.8px;
 }
 
 .tab-content-home p{
     color: var(--color-text-social);
     text-align: justify;
+    font-size: var(--font-size-content-paragraph);
 }
 
 /*********** ABOUT **********/
@@ -91,6 +227,7 @@
 .about-content-text .intro-text{
     margin-bottom: 10px;
     color: var(--color-text-social);
+    font-size: var(--font-size-content-paragraph);
 }
 
 /********** SKILLS ***********/
@@ -135,5 +272,4 @@
     transform: scale(1.1);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Efeito de hover */
 }
-
 

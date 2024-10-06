@@ -1,14 +1,97 @@
 @media screen and (max-width: 768px){
     body{
+        flex-direction: column;
         max-width: 100%;
-        height: auto;
+        min-width: 100%;
+    }
+
+    .sidebar{
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .download-cv .download-btn{
+        padding: 8px 10px;
+    }
+}
+
+/******************** Main menu ********************/
+@media screen and (max-width: 768px){
+
+    .tab-nav ul {
+        flex-direction: row; /* Alinha os itens na horizontal */
+        height: auto; /* Remove a altura fixa */
+        justify-content: space-around; /* Distribui os itens horizontalmente */
+    }
+
+    .tab-nav ul li {
+        margin: 0 10px; /* Espaçamento horizontal entre os itens */
+    }
+
+    .tab-nav ul li a {
+        padding: 10px 20px; /* Ajusta o espaçamento dos links */
+    }
+
+    .tab-content-banner{
+        font-size: 10px ;
     }
 
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
     body{
+        flex-direction: column;
         max-width: 100%;
-        height: auto;
+        min-width: 100%;
+    }
+
+    .sidebar{
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .download-cv .download-btn{
+        padding: 8px 10px;
+    }
+    /******************** Main menu ********************/
+    .tab-nav ul {
+        flex-direction: row; /* Alinha os itens na horizontal */
+        height: auto; /* Remove a altura fixa */
+        justify-content: space-around; /* Distribui os itens horizontalmente */
+    }
+
+    .tab-nav ul li {
+        margin: 0 10px; /* Espaçamento horizontal entre os itens */
+    }
+
+    .tab-nav ul li a {
+        padding: 10px 20px; /* Ajusta o espaçamento dos links */
+    }
+    /******************** Content pages ********************/
+    .tab-content{
+        padding: 20px;
     }
 }
+
+/* Para telas menores que 425px */
+@media screen and (max-width: 425px) {
+    .tab-nav ul {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tab-menu.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #f5f5f522;
+        width: 20%;
+        height: 57vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+}
+

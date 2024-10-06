@@ -1,28 +1,29 @@
 .sidebar{
     background: var(--color-sidebar-bg);
+    border-radius: 0 5% 5% 0;
+    min-width: 280px;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-    min-width: 280px;
-    border-radius: 0 5% 5% 0;
 }
 
-.sidebar-profile-logo{
+.sidebar .sidebar-profile-logo{
     width: 150px;
     border-radius: 5%;
     object-fit: cover;
 }
 
-.sidebar-profile-name{
-    margin-top: 5px;
+.sidebar .sidebar-profile-name{
     font-size: var(--font-size-aside-title);
 }
 
-.sidebar-profile-text{
-    margin-top: 5px;
+.sidebar .sidebar-profile-text{
+    margin-top: -5px;
+    font-size: var(--font-size-aside-subtitle);
 }
 
 /********** Navegação Social **********/
@@ -31,6 +32,8 @@
     gap: 10px;
 
     margin-top: 10px;
+
+    
 }
 
 .social-nav .fa-github,.fa-linkedin,.fa-instagram,.fa-whatsapp{
@@ -77,6 +80,7 @@
 .sidebar-footer p{
     font-size: 0.9rem;
 }
+
 /********** Download CV **********/
 .download-cv .download-btn{
     display: flex;

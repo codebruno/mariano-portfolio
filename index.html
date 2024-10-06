@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/import.css"> 
 </head>
 <body>
-   
+    
     <!-- Menu Lateral -->
     <aside class="sidebar" aria-label="Menu lateral com perfil e redes sociais">
         <div class="sidebar-profile">
@@ -26,75 +26,93 @@
 
          <!-- Side Navigation para redes sociais -->
         <nav aria-label="Redes sociais" class="social-nav">
+
             <ul class="social-list">
+
                 <li class="social-item">
                     <a href="#" target="_blank" title="GitHub" class="social-link"><i class="fab fa-github"></i></a>
                 </li> <!--end of social-item --> 
+
                 <li class="social-item">
                     <a href="#" target="_blank" title="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
                 </li> <!--end of social-item --> 
+
                 <li class="social-item">
                     <a href="#" target="_blank" title="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
                 </li> <!--end of social-item --> 
+
                 <li class="social-item">
                     <a href="https://api.whatsapp.com/send?phone=5547991597258&text=Olá,%20em%20breve%20entrarei%20em%20contato!" target="_blank" title="WhatsApp" class="social-link"><i class="fab fa-whatsapp"></i></a>
                 </li> <!--end of social-item --> 
+
             </ul> <!--end of social-list -->  
+
         </nav>
 
          <!-- Botão de Download -->
         <div class="download-cv">
+
             <a href="curriculo-bruno-mariano.pdf" title="Download do Currículo" class="download-btn"><i class="fas fa-download"></i>Download CV</a>
+
         </div> <!--end of download-cv" -->  
 
          <!-- Rodapé -->
          <footer class="sidebar-footer">
+
             <p>&copy; 2024 Bruno Mariano. Todos os direitos reservados.</p>
+
         </footer>
+
     </aside> <!--end of sidebar -->
 
-     <!-- Main Content -->
+     <!-- Botão de menu hambúrguer para dispositivos móveis -->
+     <button class="hamburger" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
     <main class="main-content" aria-label="Navegação de abas principais">
         <!-- Tab Navigation -->
-         <nav class="tab-nav">
-            <ul>
-                <li><a href="#" class="tab-link active" data-tab="home">
-                    <span>H</span>
-                    <span>o</span>
-                    <span>m</span>
-                    <span>e</span>
-                </a></li>
-                <li><a href="#" class="tab-link" data-tab="about">
-                    <span>A</span>
-                    <span>b</span>
-                    <span>o</span>
-                    <span>u</span>
-                    <span>t</span>
-                </a></li>
-                <li><a href="#" class="tab-link" data-tab="skills">
-                    <span>S</span>
-                    <span>k</span>
-                    <span>i</span>
-                    <span>l</span>
-                    <span>l</span>
-                    <span>s</span>
-                </a></li>
-                <li><a href="#" class="tab-link" data-tab="prtfolio">
-                    <span>P</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>j</span>
-                    <span>e</span>
-                    <span>c</span>
-                    <span>t</span>
-                    <span>s</span>
-                </a></li>
-            </ul>
-         </nav> <!--end of tab-nav -->
+        <div class="tab-menu">
+            <nav class="tab-nav">
+                <ul>
+                    <li><a href="#" class="tab-link active" data-tab="home">
+                        <span>H</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>e</span>
+                    </a></li>
+                    <li><a href="#" class="tab-link" data-tab="about">
+                        <span>A</span>
+                        <span>b</span>
+                        <span>o</span>
+                        <span>u</span>
+                        <span>t</span>
+                    </a></li>
+                    <li><a href="#" class="tab-link" data-tab="skills">
+                        <span>S</span>
+                        <span>k</span>
+                        <span>i</span>
+                        <span>l</span>
+                        <span>l</span>
+                        <span>s</span>
+                    </a></li>
+                    <li><a href="#" class="tab-link" data-tab="portfolio">
+                        <span>P</span>
+                        <span>r</span>
+                        <span>o</span>
+                        <span>j</span>
+                        <span>e</span>
+                        <span>c</span>
+                        <span>t</span>
+                        <span>s</span>
+                    </a></li>
+                </ul>
+             </nav> <!--end of tab-nav --> 
+        </div>
 
          <!-- Tab Content -->
-        <div class="tab-content active" id="home">
-
+         <section class="tab-content active" id="home">
             <div class="tab-content-home">
                 <!-- Tab Content Banner -->
                 <figure>
@@ -113,9 +131,9 @@
                     <p>Ofereço soluções de desenvolvimento front-end para criar Lading Pages modernas e responsivas. Utilizando HTML5, CSS3, JavaScript e Bootstrap, desenvolvo interfaces rápidas, intuitivas e otimizadas, sempre focadas em performance e design centrado no usuário.</p>
                 </section> <!-- end of tab-content-text -->
             </div> <!-- end of tab-content-home -->
-        </div> <!-- end of tab-content active -->
-        
-        <section class="tab-content" id="about">
+         </section> <!-- end of tab-content active -->
+         
+         <section class="tab-content" id="about">
 
             <article class="about-content">
 
@@ -152,16 +170,12 @@
                     <p>Desenvolvedor Frontend focado em criar interfaces responsivas e interativas, sempre atualizado com as melhores práticas em desenvolvimento web e design UX/UI. HTML5, CSS3, JavaScript e Bootstrap são as tecnologias principais que utilizo para criar sites eficientes, acessíveis e compatíveis com múltiplos dispositivos.</p>
             </article>
         </section> <!-- end of tab-content -->
-
-        <section class="tab-content" id="prtfolio">
-            <article class="tab-content-skills">
-                <h2>Meus Projetos - Seção Em Desenvolvimento</h2>
-            </article>
-        </section> <!-- end of tab-content -->
+         
            
     </main> <!--end of tab-content -->
-
+        
      <!-- JavaScript para alternar abas -->
      <script src="assets/js/script.js"></script>
+     <script src="assets/js/menu.js"></script>
 </body>
 </html>
